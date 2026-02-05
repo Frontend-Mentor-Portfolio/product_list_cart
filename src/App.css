@@ -1,0 +1,39 @@
+.app-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  /* Mobile padding */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.page-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--color-rose-900);
+}
+
+.product-section {
+  flex: 1;
+}
+
+.cart-section {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5.5rem;
+    /* Desktop padding */
+  }
+
+  .cart-section {
+    width: 384px;
+    /* Fixed width for cart on desktop */
+    min-width: 384px;
+  }
+}

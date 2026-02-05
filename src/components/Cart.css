@@ -1,0 +1,143 @@
+.cart-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+}
+
+.cart-title {
+    color: var(--color-red);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.empty-cart p {
+    color: var(--color-rose-500);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.cart-items {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--color-rose-100);
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-name {
+    color: var(--color-rose-900);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-price-info {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.item-quantity {
+    color: var(--color-red);
+    font-weight: 600;
+}
+
+.item-price {
+    color: var(--color-rose-500);
+}
+
+.item-total-price {
+    color: var(--color-rose-500);
+    font-weight: 600;
+}
+
+.remove-btn {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--color-rose-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition: all 0.2s;
+}
+
+.remove-btn:hover {
+    border-color: var(--color-rose-900);
+}
+
+.remove-btn img {
+    width: 10px;
+    height: 10px;
+}
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    color: var(--color-rose-900);
+}
+
+.cart-total span:first-child {
+    font-size: 14px;
+}
+
+.total-amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.carbon-neutral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--color-rose-50);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.carbon-neutral p {
+    font-size: 14px;
+    color: var(--color-rose-900);
+}
+
+.confirm-order-btn {
+    width: 100%;
+    background-color: var(--color-red);
+    color: #fff;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.confirm-order-btn:hover {
+    background-color: #952C0B;
+    /* Darker shade of red */
+}

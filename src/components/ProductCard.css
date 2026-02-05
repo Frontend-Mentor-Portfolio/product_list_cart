@@ -1,0 +1,108 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    /* Gap between image container and text */
+}
+
+.image-container {
+    position: relative;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    /* Can't overflow hidden due to button overlap, but image needs rounding */
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.product-image.active {
+    box-shadow: 0 0 0 2px var(--color-red);
+}
+
+.add-to-cart-btn,
+.quantity-controls {
+    position: absolute;
+    bottom: -22px;
+    /* Half height approx */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.add-to-cart-btn {
+    background-color: #fff;
+    border: 1px solid var(--color-rose-400);
+    color: var(--color-rose-900);
+    gap: 8px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+.quantity-controls {
+    background-color: var(--color-red);
+    color: #fff;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.control-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.control-btn img {
+    width: 10px;
+    height: 10px;
+}
+
+.quantity-text {
+    color: #fff;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.category {
+    color: var(--color-rose-500);
+    font-size: 14px;
+}
+
+.name {
+    color: var(--color-rose-900);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price {
+    color: var(--color-red);
+    font-size: 16px;
+    font-weight: 600;
+}
